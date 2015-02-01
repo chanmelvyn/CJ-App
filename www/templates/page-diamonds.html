@@ -1,0 +1,107 @@
+<ion-view view-title="{{diamond.title}}">
+<ion-content class="padding" style="background-color:#999999;">
+    
+    <div class="list card" ng-show="{{diamond.id}}=='0'">
+        <div class="item item-divider item-energized">Anatomy of a Diamond</div>
+        <div class="item item-image"><img src="img/Anatomy.jpg"></div>
+        <div class="item item-text-wrap"><h2>Table</h2><p align="justify">The top flat surface of the stone</p></div>
+        <div class="item item-text-wrap"><h2>Crown</h2><p align="justify">The top part of the stone</p></div>
+        <div class="item item-text-wrap"><h2>Girdle</h2><p align="justify">The belt or band that goes around the middle of the stone</p></div>
+        <div class="item item-text-wrap"><h2>Pavilion</h2><p align="justify">This is the bottom part of the stone</p></div>
+    </div>
+ 
+   <div class="list card" ng-show="{{diamond.id}}=='1'">
+        <div class="item item-divider item-energized">The 4Cs of Diamond Quality</div>
+        <div class="item item-image"><img src="img/4Cs.png"></div>
+        <div class="item tabs tabs-secondary">
+            <div class="tab-item">1. Cut</div>
+            <div class="tab-item">2. Clarity</div>
+            <div class="tab-item">3. Color</div>
+            <div class="tab-item">4. Carat</div>
+        </div>
+        <div class="item item-text-wrap"><p align="justify">Perfect quality diamonds are rare and very expensive</p></div>
+        <div class="item item-text-wrap"><p align="justify">Pick a diamond that appears brilliant to the naked eye</p></div>
+    </div>
+    
+    <div class="list card" ng-show="{{diamond.id}}=='2'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/Proportions.png"></div>
+        <div class="item item-text-wrap"><p align="justify">The cut determines a diamond's shape and brilliance. </p></div>
+        <div class="item item-text-wrap"><p align="justify">A well-cut diamond reflects light from one facet to another, then disperse it through the top of the diamond.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Do not confuse the cut of a diamond with its shape. Diamonds can be cut into a number of shapes according to the natural rough stone. Pick the right shape. </p></div>
+        <div class="item item-text-wrap"><p align="justify">Common shapes are Round, Brilliant and Emerald Cut.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Popular less common shapes include Marquise, Oval, Pear, Princess and Heart, etc.</p></div>
+    </div>
+
+    <div class="list card" ng-show="{{diamond.id}}=='3'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/Clarity.jpg"></div>
+        <div class="item item-text-wrap"><p align="justify">Refers to the purity of a diamond.</p></div>
+        <div class="item item-text-wrap"><p align="justify">There are 2 types of flaws – External surface blemishes (present during the cutting process, often at the girdle). Internal inclusions</p></div>
+        <div class="item item-text-wrap"><p align="justify">High quality diamonds have no or few inclusions and are rare and highly priced.</p></div>
+        <div class="item item-text-wrap"><p align="justify">A 10x magnifying glass or loupe and a trained eye will be able to determine a diamond’s clarity. </p></div>
+        <div class="item item-text-wrap"><h2>VS1-VS2</h2><p align="justify">Very Slightly Included 1 and 2. Minute inclusions seen only with difficulty under 10x magnification. Easy to find in a wide range of prices (for a one-carat round brilliant diamond, prices start around $3,750).</p></div>
+        <div class="item item-text-wrap"><h2>SI1-SI2</h2><p align="justify">Slightly Included 1 and 2. Minute inclusions are visible under 10x magnification, and may be visible by the unaided eye. Easy to find in a wide range of prices (for a one-carat round brilliant diamond, prices start around $3,500).</p></div>
+        <div class="item item-text-wrap"><h2>I1-I2-I3</h2><p align="justify">Inclusions 1, 2, and 3. Inclusions visible under 10x magnification as well as to the human eye. We do not recommend buying diamonds in any of these grades.</p></div>        
+    </div>
+ 
+    <div class="list card" ng-show="{{diamond.id}}=='4'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/Color.jpg"></div>
+        <div class="item item-text-wrap"><p align="justify">D-E-F classified as Finest White (Blue White)</p></div>
+        <div class="item item-text-wrap"><p align="justify">G-H-I-J classified as Commercial White</p></div>
+        <div class="item item-text-wrap"><p align="justify">K-L-M-N classified as Yellow</p></div>
+        <div class="item item-text-wrap"><p align="justify">Fancy Colors From Yellow to Brown</p></div>
+        <div class="item item-text-wrap"><p align="justify">Blue and Pink Diamonds are very expensive</p></div>
+        <div class="item item-text-wrap"><p align="justify">The best diamonds are those without color or blue white</p></div>       
+    </div>    
+    
+    <div class="list card" ng-show="{{diamond.id}}=='5'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/Carat.png"></div>
+        <div class="item item-text-wrap"><p align="justify">Diamonds are weighed in Carats.</p></div>
+        <div class="item item-text-wrap"><p align="justify">One carat is divided into 100 "points," so that a diamond of 75 points weights .75 ct.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The carat-weight of a diamond is the easiest measurement to determine.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Most importantly, two diamonds can be of equal carat-weight, but their value can differ greatly due to their cut, color, and clarity.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Set a carat weight minimum based on the recipient's preferences. A carat weight difference of 10% or less will not be noticeable visually. </p></div>
+        <div class="item item-text-wrap"><p align="justify">You may choose a smaller carat diamond in favor of a higher quality diamond.</p></div>       
+    </div>      
+
+    <div class="list card" ng-show="{{diamond.id}}=='6'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-text-wrap"><p align="justify">Scratch the diamond against glass. If the glass is scraped or scratched, the diamond is real.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Place the diamond over a newspaper or other printed text — real diamonds refract light so much that you wouldn't be able to see any lines, circles or full letters coming through.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Fog Test. Diamonds are good at conducting heat, so the fog your breath creates should clear up almost instantly. However, a synthetic rock called moissanite can pass this test.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Weight Test. If your stone is a simulated diamond or cubic zirconia (CZ), it will be about 50 percent heavier than a real diamond of equal size.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Certificate. Certification and grading from a jewelry appraiser.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Laser Inscription Number</p></div>       
+    </div> 
+
+    <div class="list card" ng-show="{{diamond.id}}=='7'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-text-wrap"><h2>Brilliance</h2><p align="justify">Excellent - Very Good - Good</p></div>
+        <div class="item item-text-wrap"><h2>Polish</h2><p align="justify">Excellent - Very Good - Good</p></div>
+        <div class="item item-text-wrap"><h2>Symmetry</h2><p align="justify">Excellent - Very Good - Good</p></div>       
+    </div> 
+    
+    <div class="list card" ng-show="{{diamond.id}}=='8'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/AGS.jpg"></div>
+        <div class="item item-image"><img src="img/GIA.png"></div>
+        <div class="item item-image"><img src="img/HRD.jpg"></div>
+        <div class="item item-image"><img src="img/EGL.jpg"></div>
+        <div class="item item-image"><img src="img/IGI.png"></div>      
+    </div>   
+    
+    <div class="list card" ng-show="{{diamond.id}}=='9'">
+        <div class="item item-divider item-energized">{{diamond.title}}</div>
+        <div class="item item-image"><img src="img/Proportions.png"></div>
+        <div class="item item-text-wrap"><h2>Measurements</h2><p align="justify"></p></div>
+        <div class="item item-text-wrap"><h2>Depth</h2><p align="justify">57.5% to 63%</p></div>
+        <div class="item item-text-wrap"><h2>Table</h2><p align="justify">53% to 57%</p></div>
+        <div class="item item-text-wrap"><h2>Girdle</h2><p align="justify">1.1% to 3.9%</p></div>
+        <div class="item item-text-wrap"><h2>Cutlet</h2><p align="justify">Pointed</p></div>
+        <div class="item item-text-wrap"><h2>Fluorescence</h2><p align="justify">None</p></div>        
+    </div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view view-title="{{gemstone.title}}">
+<ion-content class="padding" style="background-color:#999999;">
+    <div class="list card">
+        <div class="item item-divider item-stable">{{gemstone.title}}</div>
+        <div class="item item-image"><img src="{{gemstone.image}}" width="100%"></div>
+    </div>
+
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Light</div>
+        <div class="item item-text-wrap"><p align="justify">The gem cutter's art is to get as much light as possible.</p></div>
+        <div class="item item-text-wrap"><p align="justify">This Diagram depicts a good gemstone. The angles are correct and light returns back out the top. The more light that does this the better and more brilliant the gemstone will be.</p></div>
+    </div>
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Cut</div>
+        <div class="item item-text-wrap"><p align="justify">The finished gemstone should be sharp and crisp looking, the polish perfect and scratch free. The overall appearance is one of quality and fine workmanship.</p></div>
+    </div>    
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Lighting</div>
+        <div class="item item-text-wrap"><p align="justify">The overhead halogen lights in the jewellery shops will make anything dazzle and sparkle like crazy. Try to view the gemstone in more natural lighting if possible. If you can view the stone outdoors, position yourself so the sun is behind you shining over your shoulder when you look at the gem.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Some stones don't like artificial lighting, like tourmaline for example. Fluorescent and incandescent lights can make certain stones appear muddy and dull or even slightly alter the color. Again, try to view the gemstone in a range of different lighting, including preferably good daylight.</p></div>
+    </div>        
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Synthetics and Imitations</div>
+        <div class="item item-text-wrap"><p align="justify">Always buy your gemstones from reputable dealer or jeweller.</p></div>
+        <div class="item item-text-wrap"><p align="justify">With many of these imitations it can be very difficult to tell them apart from the genuine gems and they are often made to imitate the very finest of their type. Even professional gem lab scan have difficulty in identifying a fake. Remember the caveat : BUYER BEWARE!</p></div>
+        <div class="item item-text-wrap"><p align="justify">Today many people have heard of YAG and CZ (cubic zirconia - not to be confused with Zircon which is a completely natural and desirable gem)</p></div>
+    </div>        
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Treatments</div>
+        <div class="item item-text-wrap"><p align="justify">Gemstone treatment is a very common practice in the industry. It is done to improve the quality and marketability of the final product.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The treating of gemstones to improve their color is as old as the custom of wearing stones itself. Fire treatment method has wide acceptance in the industry.</p></div>
+        <div class="item item-text-wrap"><p align="justify">There are various types of treatments and include the following : Heating, Oiling (emeralds in particular to fill the cracks), Eradication, Lasering, Dyeing, Acid, Beryllium are common forms of treatment.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The more expensive varieties like sapphires, rubies and emeralds are usually treated. A lot of debate centers around disclosure to the buying public. Industry and governmental guidelines can be unclear and in some cases completely lacking. Treating stones is relatively cheap and is done on a large scale, turning inferior stones into something more marketable. This all impact a gemstone's value and the industry at large.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Generally speaking, an untreated stone of fine quality should demand a higher price and premium when compared to a similar stone that is treated. Fine untreated stones of any variety are getting scarcer by the day and harder to come by.</p></div>
+    </div>        
+    <div class="list card" ng-show="gemstone.id=='0'">
+        <div class="item item-divider item-energized">Color</div>
+        <div class="item item-text-wrap"><p align="justify">Color can play a very large role in determining the fineness of a gemstone. The three main terms are : HUE, SATURATION, TONE.</p></div>
+        <div class="item item-text-wrap"><p align="justify">HUE : The actual color, eg. red, blue, green.</p></div>
+        <div class="item item-text-wrap"><p align="justify">SATURATION : The richness or vividness of the hue.</p></div>
+        <div class="item item-text-wrap"><p align="justify">TONE : The lightness or darkness of the blue</p></div>
+        <div class="item item-text-wrap"><p align="justify">Trust your eye. Be wary of gemstones that are so dark you cannot see through them and they appear to swallow the light and there is little brilliance. Garnets are a common one for this.</p></div>
+    </div>       
+    
+    <button class="button button-block icon ion-ios7-cart button-energized" ng-show="gemstone.id=='0'" ng-click="browser('');">
+    &nbsp;Shop for Quality Gemstones
+    </button>
+    
+    <button class="button button-block icon ion-ios7-cart button-energized" ng-show="gemstone.id!='0'" ng-click="browser(gemstone.title);">
+    &nbsp;Shop for {{gemstone.title}}
+    </button>
+    
+</ion-content>
+</ion-view>

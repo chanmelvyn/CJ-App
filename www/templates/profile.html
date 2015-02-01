@@ -1,0 +1,25 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">My Profile</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeProfile()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="saveProfile(profileData.name,profileData.birthdate)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="profileData.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Birth Date</span>
+          <input type="date" ng-model="profileData.birthdate">
+        </label>
+        <label class="item">
+          <button class="button button-block button-energized" type="submit">Save Profile</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

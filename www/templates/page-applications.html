@@ -1,0 +1,110 @@
+<ion-view view-title="{{application.title}}">
+<ion-content class="padding" style="background-color:#999999;">
+    
+    <div class="list card" ng-show="{{application.id}}=='0'">
+        <div class="item item-divider item-energized">{{application.title}}</div>
+        <div class="item item-text-wrap"><p align="justify">All stones or gems have magnetic powers in varying degrees, and many of them are beneficial to us for their therapeutic cures.</p></div>
+        <div class="item item-text-wrap"><p align="justify">They emit vibrations and frequencies which have strong potential influence on our wholebeing.</p></div>
+        <div class="item item-text-wrap"><p align="justify">They create strong energy fields which enable us to be charged with their energies.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The gems are used for healing, transforming, balancing, and attuning the body, mind and soul.</p></div>
+        <div class="item item-text-wrap"><p align="justify">They are a manifestation of vibrancy, light and color, life, textures, transparency and clarity.</p></div>
+        <div class="item item-text-wrap"><p align="justify">They activate our abilities, soothe and comfort, heal and balance through the purity of their rays.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The patterns in the stones reveal to us the changes that keep taking place, indicating that life is change – that the process of evolution is a cosmic law.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Each gem, tuned to a particular ray, has a special role to play.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The more precious stones that you wear, the more strongly will you be charged with cosmic forces, radiating out into your surroundings.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Wear your stones – Do not store them in a safe or jewellery box, for you will be depriving your body of their tremendous power.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Precious stones have a way of healing emotions that have been inharmonious.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The stones selected for use should always be in contact with one’s body to absorb their healing properties.</p></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='1'">
+        <div class="item item-divider item-energized">{{application.title}}</div>
+        <div class="item item-text-wrap"><p align="justify">Different gems are related to the different planets.</p></div>
+        <div class="item item-text-wrap"><p align="justify">They obtained their potent power from the cosmic energies of the planets.</p></div>
+        <div class="item item-text-wrap"><p align="justify">The person wearing the gemstones will benefit when the gem comes into contact with the skin, giving effect on the body and its various organs.</p></div>
+        <div class="item item-avatar"><img src="img/Sun.jpg"><h2>Sun</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Moon.jpg"><h2>Moon</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Mars.jpg"><h2>Mars</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Mercury.jpg"><h2>Mercury</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Jupiter.jpg"><h2>Jupiter</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Venus.jpg"><h2>Venus</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+        <div class="item item-avatar"><img src="img/Saturn.jpg"><h2>Saturn</h2><p>Ruby, Granet, Red Tourmaline</p></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='2'" ng-repeat="birthstone in birthstones">
+        <div class="item item-divider item-energized">DOB: {{birthstone.date}}</div>
+        <div class="item item-avatar"><img src="img/{{birthstone.id}}.jpg"><p>Zodiac Sign</p><h2>{{birthstone.id}}</h2></div>
+        <div class="item item-avatar"><img src="img/{{birthstone.planet}}.jpg"><p>Ruling Planet</p><h2>{{birthstone.planet}}</h2></div>
+        <div class="item item-avatar"><img src="{{birthstone.image}}"><p>Birthstone</p><h2>{{birthstone.gems}}</h2></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='3'" ng-repeat="day in today">
+        <div class="item item-divider item-energized">{{day.id}}'s Gemstones</div>
+        <div class="item item-avatar"><img src="img/{{day.planet}}.jpg"><p>Ruling Planet</p><h2>{{day.planet}}</h2></div>   
+        <div class="item item-avatar item-text-wrap"><img src="{{day.image}}"><p>Gems to Wear</p><h2>{{day.gems}}</h2></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='4'" ng-repeat="lifepath in numerology">
+        <div class="item item-divider item-energized">Life Path Number {{lifepath.id}}</div>
+        <div class="item item-avatar"><img src="img/{{lifepath.planet}}.jpg"><p>Ruling Planet</p><h2>{{lifepath.planet}}</h2></div>
+        <div class="item item-avatar"><img src="img/{{lifepath.element}}.png"><p>Element</p><h2>{{lifepath.element}}</h2></div>
+        <div class="item item-avatar item-text-wrap"><img src="{{lifepath.image}}"><p>Auspicious Gems</p><h2>{{lifepath.gems}}</h2></div>
+    </div>   
+    
+    <div class="list card" ng-show="{{application.id}}=='5'">
+        <div class="item item-divider item-energized">{{application.title}}</div>
+        <div class="item item-text-wrap"><p align="justify">Colors can impact our health, mood and well-being.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Different colored gems bring healing properties to different parts of our body and nervous system.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Colors affect all of us positively or negatively.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Colors can affect people subconsciously and on the psychological level.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Responses vary with each individual.</p></div>
+        <div class="item item-text-wrap"><p align="justify">Colors have different meaning in different cultures.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Red.png"><h2>Red</h2><p align="justify">Energy, passion, love, war, anger, aggression, violance, good fortune, stimulates brain waves.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Green.png"><h2>Green</h2><p align="justify">Healing, heals bones and muscles, works on the heart chakra, protection, nature, envy</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Blue.png"><h2>Blue</h2><p align="justify">Calm, harmony, works on the throat chakra, strengthens intellect and concentration power, sadness</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Yellow.png"><h2>Yellow</h2><p align="justify">Optimism, happiness, abundance, annoyance</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Orange.png"><h2>Orange</h2><p align="justify">Creativity, joy, warmth, youth, excitement, flamboyance</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Pink.png"><h2>Pink</h2><p align="justify">Love charm, improves interpersonal skills, frivolity</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Purple.png"><h2>Purple</h2><p align="justify">Royalty, spirituality, wealth, ambition</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Indigo.png"><h2>Indigo</h2><p align="justify">Connects to the third eye, intuition, spiritual knowledge, can deepen a depressed state</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Black.png"><h2>Black</h2><p align="justify">Grounding, depressant, death</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/White.png"><h2>White</h2><p align="justify">Purity, innocence, sacrifice, protection, spirituality</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Gold.png"><h2>Gold</h2><p align="justify">Midas Touch, wealth</p></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='6'">
+        <div class="item item-divider item-energized">{{application.title}}</div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Garnet.jpg"><h2>Garnet</h2><p align="justify">Affects base chakra and spine. Heals shoulder and backaches. For shoulder pain, wear a necklace.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Pearl.jpg"><h2>Pearl</h2><p align="justify">Used as medicine in many cultures. Reduces fever and indigestion, cures poisoning. Heals eye allergies. Gem of honesty.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Moonstone.jpg"><h2>Moonstone</h2><p align="justify">Hindus believe it brings good luck. Provides balance. For relationship harmony.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/CatsEye.jpg"><h2>Cat's Eye</h2><p align="justify">Provides energy and creativity to a business.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Onyx.jpg"><h2>Onyx</h2><p align="justify">Lifts fears and depression. Recommended during grieving. For hormonal balance, self-control and helps better decision-making.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Opal.jpg"><h2>Opal</h2><p align="justify">Strengthens sensitivity and expression of feelings, and intuition. For those who are assertive, this stone promotes joy and confidence. When a person is ill, the color of the opal may change.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Citrine.jpg"><h2>Citrine</h2><p align="justify">Wealth stone. Helps solve domestic problems. Good for dealings with education, business or relationship. Improves confidence and energy. Stimulates kidney, liver and muscles.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Coral.jpg"><h2>Coral</h2><p align="justify">Used as medical drug in ancient times. Strengthens blood cells, regulates menstruation. Calming stone, lifts depression.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Amethyst.jpg"><h2>Amethyst</h2><p align="justify">Balances the chakras in the body. Clears the mind, controls bad thoughts, reduce addictions, promotes wisdom and spiritual understanding, makes its owner sharp in business. Decreases nightmares.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Amber.jpg"><h2>Amber</h2><p align="justify">Strengthens memory, reduce pressure, improves decision-making ability, heals the blood.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Jade.jpg"><h2>Jade</h2><p align="justify">In ancient cultures, a magic stone providing success and protection. Improves relationships, improves unity. Strengthens bone structure, ease pain in limbs.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Diamond.jpg"><h2>Diamond</h2><p align="justify">the hardest gem in nature. In Greek, its name means ‘unconquerable’. Release personality blockages, guards against jealousy, reduces pressure. Improves self-confidence and ability to speak up.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/BlueSapphire.jpg"><h2>Sapphire</h2><p align="justify">the second hardest gem in nature (next to the diamond). In Greek, it name means ‘blue’. Royalty wore sapphire to guard against jealousy and injury. It also became associated with celestial energy at the end of the Middle Ages. Sapphire is a good gemstone for communication. It  is for balance, wisdom and stability. It eases pressure, deep hopelessness and increases intuition.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/StarSapphire.jpg"><h2>Star Sapphire</h2><p align="justify">A rare and precious gemstone. Promotes a sense of happiness and security seen by others.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Topaz.jpg"><h2>Topaz</h2><p align="justify">To the Egyptians, the color of yellow topaz is associated with Apollo, the Sun God. To the Greeks,   the topaz is a special powerful stone and they wore the gemstone to ward off infections, evil spirits, to remove sadness and to strengthen intellect.  It was believed that the topaz will turn darker when near poison.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/LapisLazuli.jpg"><h2>Lapis Lazuli</h2><p align="justify">Only priests were worthy of carrying this gemstone in the past. To the Egyptians, the blue stone with specks of gold symbolized power and status. The stone was lauded as bringing messages  from God and paradise. This stone is wonderful for balancing, connecting with the higher self and increases dreaming. It eases heartache and strengthens the immune system.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Ruby.jpg"><h2>Ruby</h2><p align="justify">A gemstone of happiness that fans the flames in a love relationship. Promotes economic stability. A fertility stone, it is good for women who want babies with fertility problems. It is believed wearing a ruby encourages good health, wealth, wisdom and love. Not recommended for people who become angry or nervous easily as it is a fire stone.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/StarRuby.jpg"><h2>Star Ruby</h2><p align="justify">A ruby with a star; very rare and precious. This gemstone provides an inner feeling of prosperity. When worn, the inner spark may reflect outwards.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Emerald.jpg"><h2>Emerald</h2><p align="justify">To the Egyptians, it is the gemstone of fertility and rebirth. It is a spiritual, mental and physical healing stone. It boosts memory, heals the eyes gets rid of poison, reduces backaches caused by emotional problems, eases pressure and encourages self-expression. It is good for the heart chakra, therefore recommended for pessimistic people who are lost.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/Peridot.jpg"><h2>Peridot</h2><p align="justify">Peridot is good for maintaining romantic relationships. In Egypt, it was the stone of the sun. In Rome and Greece, worn as a bracelet with donkey’s hair as a charm to ward off evil spirits. The stone has an effect on the third and forth chakras and  help heal the kidneys and liver. Powdered peridot was used to treat asthma. Hold it in your left hand during meditation to increase intuition.</p></div>
+        <div class="item item-avatar item-text-wrap"><img src="img/RoseQuartz.jpg"><h2>Rose Quartz</h2><p align="justify">The love stone. Increases self-esteem, heals old emotional hurts, promotes creativity and feeling of being content. Keep in the bedroom to retain relationships. It helps strengthen the heart, lungs, liver and kidneys. Used  with Aventurine, it eases the side effects of chemotherapy treatments for cancer patients.</p></div>
+    </div>
+    
+    <div class="list card" ng-show="{{application.id}}=='7'">
+        <div class="item item-divider item-energized">Choosing Your Gemstone</div>
+        <div class="item item-text-wrap"><p align="justify">According to your date of birth</p></div>
+        <div class="item item-text-wrap"><p align="justify">According to your Star Sign</p></div>
+        <div class="item item-text-wrap"><p align="justify">According to your Personality</p></div>
+        <div class="item item-text-wrap"><p align="justify">According to your desired outcome</p></div>
+        <div class="item item-text-wrap"><p align="justify">According to your physical, mental and spiritual needs</p></div>
+        <div class="item item-text-wrap"><p align="justify">It's our wish that any gemstone you choose will be one that 'calls' out to you and a stone of happiness for a lifetime</p></div>
+    </div>
+</ion-content>
+</ion-view>

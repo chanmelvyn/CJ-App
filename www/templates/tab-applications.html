@@ -1,0 +1,14 @@
+<ion-view view-title="Applications">
+<ion-content style="background-color:#999999;">
+    <div class="item item-image" onclick="window.open('http://www.classicjewellerygroup.com', '_system');"><img src="img/Big05.jpg"></div>
+    <div class="list">
+    <a class="item item-icon-right" ng-repeat="application in applications" href="#/tab/applications/{{application.id}}">
+        <i class="icon-magic">&nbsp;&nbsp;</i>
+        {{application.title}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+    </a>
+    </div>
+</ion-content>
+</ion-view>
+
+
