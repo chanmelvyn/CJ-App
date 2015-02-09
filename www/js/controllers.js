@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ngCordova'])
 
 .controller('HomeCtrl', function($scope, $ionicModal, Home) {
     // Form data
@@ -67,4 +67,4 @@ angular.module('starter.controllers', [])
     $scope.numerology = Home.allNumerology();
 })
 
-.controller('AboutCtrl', function($scope) {});
+.controller('AboutCtrl', function($scope, $cordovaInAppBrowser) {});
