@@ -1,0 +1,25 @@
+<ion-view view-title="Classic Jewellery">    
+  <ion-content style="background-color:#999999;">
+      
+    <div class="item item-image"><img src="img/Small01.jpg"></div> 
+    
+    <div class="list card">
+        <div class="item item-divider item-energized">{{today.id}}'s Gemstones</div>
+        <div class="item item-avatar"><img src="img/{{today.planet}}.jpg"><p>Ruling Planet</p><h2>{{today.planet}}</h2></div>   
+        <div class="item item-avatar item-text-wrap"><img src="{{today.image}}"><p>Gems to Wear</p><h2>{{today.gems}}</h2></div>
+    </div>
+    <div class="list card">
+        <div class="item item-divider item-energized item-icon-right">{{Name}}'s Birthstone<i class="icon ion-person-add" ng-click="openProfile()"></i></div>
+        <div class="item item-avatar"><img src="img/{{birthstone.id}}.jpg"><p>Zodiac Sign</p><h2>{{birthstone.id}}</h2></div>
+        <div class="item item-avatar"><img src="img/{{birthstone.planet}}.jpg"><p>Ruling Planet</p><h2>{{birthstone.planet}}</h2></div>
+        <div class="item item-avatar"><img src="{{birthstone.image}}"><p>Birthstone</p><h2>{{birthstone.gems}}</h2></div>
+    </div>
+    <div class="list card">
+        <div class="item item-divider item-energized item-icon-right">{{Name}}'s Numerology<i class="icon ion-person-add" ng-click="openProfile()"></i></div>
+        <div class="item item-avatar"><img src="img/Numerology.png"><p>Life Path Number</p><h2>Number {{numerology.id}}</h2></div>
+        <div class="item item-avatar"><img src="img/{{numerology.planet}}.jpg"><p>Ruling Planet</p><h2>{{numerology.planet}}</h2></div>
+        <div class="item item-avatar"><img src="img/{{numerology.element}}.png"><p>Element</p><h2>{{numerology.element}}</h2></div>
+        <div class="item item-avatar item-text-wrap"><img src="{{numerology.image}}"><p>Auspicious Gems</p><h2>{{numerology.gems}}</h2></div>
+    </div><BR>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="Diamonds" style="background-color:#999999;">
+<ion-content>
+    <div class="item item-image" onclick="window.open('http://www.classicjewellerygroup.com', '_system');"><img src="img/Big01.jpg"></div>
+    <div class="list">
+    <a class="item item-icon-right" ng-repeat="diamond in diamonds" href="#/tab/diamonds/{{diamond.id}}">
+        <i class="icon-diamond">&nbsp;&nbsp;</i>
+        {{diamond.title}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+    </a>
+    </div>
+</ion-content>
+</ion-view>
+
+
