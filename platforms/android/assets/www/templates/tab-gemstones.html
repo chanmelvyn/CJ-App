@@ -1,0 +1,15 @@
+<ion-view view-title="Gemstones">
+<ion-content style="background-color:#999999;">
+    <div class="item item-image" onclick="window.open('http://www.classicjewellerygroup.com', '_system', 'location=no');"><img src="img/Big03.jpg"></div>
+    <div class="list">
+    <a class="item item-avatar item-icon-right item-text-wrap" ng-repeat="gemstone in gemstones" href="#/tab/gemstones/{{gemstone.id}}">
+        <img src="{{gemstone.image}}">
+        {{gemstone.title}}
+        <p>{{gemstone.color}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+    </a>
+    </div>
+</ion-content>
+</ion-view>
+
+

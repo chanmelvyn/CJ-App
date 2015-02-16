@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -30,7 +29,6 @@
 		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		4ED7DB264FE842F09767632F /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 215B71AC3B1F4AF2BF3B8948 /* CDVDevice.m */; };
-		52B6B8B93A214F9882D24650 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04751DF399E049D2B061AB5C /* CDVLogger.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
@@ -417,7 +415,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				1E800EEA8F0F4C1598344951 /* IonicKeyboard.m in Sources */,
 				EB98C588EDCB4168B8E912B7 /* UIWebViewExtension.m in Sources */,
-				52B6B8B93A214F9882D24650 /* CDVLogger.m in Sources */,
 				4ED7DB264FE842F09767632F /* CDVDevice.m in Sources */,
 				C7B6FD87F6C14293880DE8D1 /* CDVInAppBrowser.m in Sources */,
 			);
